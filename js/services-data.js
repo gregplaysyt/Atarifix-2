@@ -259,11 +259,11 @@ function loadServices() {
                 <div class="service-actions">
                     <button class="btn-read-more">
                         <span class="btn-text">Read More</span>
-                        <i class="fas fa-chevron-down btn-icon"></i>
+                        <i class="fas fa-arrow-right btn-icon" style="font-size: 0.8rem; margin-left: 8px; background: none; border: none;"></i>
                     </button>
                     <button class="btn-read-less" style="display: none;">
                         <span class="btn-text">Show Less</span>
-                        <i class="fas fa-chevron-up btn-icon"></i>
+                        <i class="fas fa-arrow-left btn-icon" style="font-size: 0.8rem; margin-left: 8px; background: none; border: none;"></i>
                     </button>
                 </div>
             </div>
