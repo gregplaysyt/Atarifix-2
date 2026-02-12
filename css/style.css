@@ -27,7 +27,7 @@ body {
     font-weight: 400;
 }
 
-/* ========== KEEP MONT SERRAT FOR ALL HEADINGS ========== */
+/* ========== KEEP MONTSERRAT FOR ALL HEADINGS ========== */
 h1, h2, h3, h4, h5, h6,
 .hero h1,
 .section-title h2,
@@ -150,6 +150,15 @@ ul.nav-links {
     padding: 0;
 }
 
+.nav-links .btn-small,
+.nav-links a.btn,
+header .btn-small,
+.btn-free-consultation,
+a[href*="Free Consultation"] {
+    color: #ffffff !important;
+    background: var(--gradient) !important; /* Keeps your gradient background */
+}
+
 .nav-links a {
     text-decoration: none;
     color: var(--dark);
@@ -236,7 +245,7 @@ ul.nav-links {
 
 .btn-outline:hover {
     background: var(--gradient);
-    color: white;
+    color: rgb(87, 124, 243);
     border-color: transparent;
 }
 
@@ -2736,4 +2745,529 @@ header#header {
     .floating-elements {
         display: none;
     }
+}
+/* ========== PREMIUM SECTION STYLES - PROCESS, INDUSTRIES, AWARDS, PARTNERS ========== */
+
+/* ---------- DARK BACKGROUND UTILITY ---------- */
+.bg-dark {
+    background: linear-gradient(145deg, #0c0b1f, #1a1a2e);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-dark::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 30%, rgba(108, 99, 255, 0.08) 0%, transparent 40%);
+    pointer-events: none;
+}
+
+.text-white h2,
+.text-white p {
+    color: white;
+}
+
+.text-white h2 {
+    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.tag-light {
+    background: rgba(255, 255, 255, 0.12) !important;
+    color: white !important;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ========== 1. PROCESS SECTION - PREMIUM ========== */
+.process-showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    margin-top: 80px;
+}
+
+.process-visual {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+    position: relative;
+}
+
+.process-visual.reverse {
+    direction: rtl;
+}
+
+.process-visual.reverse .process-content {
+    direction: ltr;
+}
+
+.process-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+    transition: transform 0.6s ease;
+}
+
+.process-visual:hover .process-image {
+    transform: scale(1.02);
+}
+
+.process-content {
+    padding: 40px;
+    position: relative;
+}
+
+.step-badge {
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgb(136, 134, 177);
+    line-height: 1;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.process-content h3 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: var(--grey);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.process-visual.reverse .process-content h3 {
+    color: var(--grey);
+}
+
+.process-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--white);
+    margin-bottom: 25px;
+}
+
+.process-highlights {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.process-highlights li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--gray);
+    font-size: 1rem;
+}
+
+.process-highlights i {
+    color: var(--secondary);
+    width: 20px;
+    font-size: 1rem;
+}
+
+/* ========== 4. INDUSTRIES SECTION - PREMIUM ========== */
+.industries-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.industry-card {
+    height: 380px;
+    border-radius: 24px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+}
+
+.industry-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+}
+
+.industry-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, rgba(38,34,98,0.92), rgba(108,99,255,0.85));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(2px);
+}
+
+.industry-card:hover .industry-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.industry-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    border: 2px solid rgba(255,255,255,0.2);
+    transition: all 0.3s ease;
+}
+
+.industry-card:hover .industry-icon {
+    background: rgba(255,255,255,0.25);
+    transform: scale(1.1);
+    border-color: rgba(255,255,255,0.4);
+}
+
+.industry-overlay h3 {
+    color: white;
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.industry-overlay p {
+    color: rgba(255,255,255,0.9);
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 250px;
+}
+
+/* ========== 5. AWARDS & CERTIFICATIONS - PREMIUM ========== */
+#awards {
+    position: relative;
+    overflow: hidden;
+}
+
+#awards::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(108,99,255,0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.awards-showcase {
+    margin-top: 60px;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.award-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.02);
+}
+
+.award-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.award-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(108, 99, 255, 0.15);
+}
+
+.award-card:hover::before {
+    transform: scaleX(1);
+}
+
+.award-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, rgba(108,99,255,0.1), rgba(157,155,244,0.1));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    font-size: 1.8rem;
+    color: var(--secondary);
+    transition: all 0.3s ease;
+}
+
+.award-card:hover .award-icon {
+    background: var(--gradient);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.award-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.award-card p {
+    color: var(--gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.certifications {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(145deg, rgba(108,99,255,0.03), rgba(157,155,244,0.03));
+    border-radius: 30px;
+    border: 1px solid rgba(108,99,255,0.1);
+}
+
+.certifications h3 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.cert-badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.cert-badges img {
+    height: 50px;
+    width: auto;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    filter: grayscale(30%);
+}
+
+.cert-badges img:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+/* ========== 6. TECHNOLOGY PARTNERS - PREMIUM ========== */
+#partners {
+    background: white;
+    position: relative;
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.partner-logo {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0,0,0,0.02);
+    height: 120px;
+}
+
+.partner-logo:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(108, 99, 255, 0.1);
+    border-color: rgba(108,99,255,0.2);
+}
+
+.partner-logo img {
+    max-width: 100%;
+    max-height: 60px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.partner-logo:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1200px) {
+    .industries-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .awards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .partners-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .process-visual {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .process-visual.reverse {
+        direction: ltr;
+    }
+    
+    .process-image {
+        height: 350px;
+    }
+    
+    .process-content {
+        padding: 20px;
+    }
+    
+    .process-content h3 {
+        font-size: 1.8rem;
+    }
+    
+    .cert-badges {
+        gap: 30px;
+    }
+    
+    .cert-badges img {
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .industries-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .awards-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .process-showcase {
+        gap: 80px;
+    }
+    
+    .step-badge {
+        font-size: 4rem;
+    }
+    
+    .certifications {
+        padding: 30px 20px;
+    }
+    
+    .certifications h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .partners-grid {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .partner-logo {
+        height: 100px;
+    }
+    
+    .industry-card {
+        height: 350px;
+    }
+    
+    .award-card {
+        padding: 30px 20px;
+    }
+}
+/* ========== FIX INDUSTRIES CARD TEXT - ALWAYS VISIBLE ========== */
+
+/* Make overlay always visible, not just on hover */
+.industry-overlay {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    background: linear-gradient(145deg, rgba(38,34,98,0.85), rgba(108,99,255,0.8)) !important;
+    backdrop-filter: blur(2px);
+}
+
+/* Remove hover-only behavior */
+.industry-card:hover .industry-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Make text bright and crisp */
+.industry-overlay h3 {
+    color: white !important;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.industry-overlay p {
+    color: rgba(255,255,255,0.95) !important;
+    font-weight: 400;
+}
+
+/* Optional: Keep the hover effect but ensure text stays visible */
+.industry-card:hover .industry-overlay {
+    background: linear-gradient(145deg, rgba(28,24,78,0.95), rgba(88,79,235,0.9)) !important;
 }
