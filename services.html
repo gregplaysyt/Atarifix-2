@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Atarifix Consulting</title>
+    
+    <!-- Same CSS and fonts as main page -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Atarifix Consulting" class="logo-image">
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#who-we-are">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#contact" class="btn btn-small">Free Consultation</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Services Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Our Services</h1>
+                <p>Comprehensive IT solutions designed to drive your business growth and digital transformation</p>
+                <a href="index.html#contact" class="btn btn-hero">
+                    <i class="fas fa-calendar-alt" style="margin-right: 10px;"></i>
+                    Schedule a Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+       <!-- Services Section -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <span class="section-tag">OUR SERVICES</span>
+                <h2>Comprehensive IT & Design Solutions</h2>
+                <p>We deliver cutting-edge technology and creative services tailored to drive your business innovation and growth</p>
+            </div>
+            
+            <!-- Services Filter Categories -->
+            <div class="service-categories">
+                <button class="category-btn active" data-category="all">All Services</button>
+                <button class="category-btn" data-category="development">Development</button>
+                <button class="category-btn" data-category="design">Design</button>
+                <button class="category-btn" data-category="web">Web</button>
+                <button class="category-btn" data-category="cloud">Cloud</button>
+                <button class="category-btn" data-category="security">Security</button>
+                <button class="category-btn" data-category="consulting">Consulting</button>
+            </div>
+            
+            <!-- Services Grid -->
+            <div class="services-grid" id="servicesGrid">
+                <!-- Services will be loaded dynamically by JavaScript -->
+                <div class="loading-services">
+                    <div class="spinner"></div>
+                    <p>Loading our services...</p>
+                </div>
+            </div>
+            
+            <!-- CTA -->
+            <div class="services-cta">
+                <h3>Need a Custom Solution?</h3>
+                <p>We can tailor our services to meet your specific business requirements.</p>
+                <a href="index.html#contact" class="btn">
+                    <i class="fas fa-calendar-alt" style="margin-right: 10px;"></i>
+                    Schedule a Free Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Home CTA -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="back-home-cta">
+                <h3>Ready to Transform Your Business?</h3>
+                <p>Explore how our expertise can help your organization thrive in the digital age.</p>
+                <div class="cta-buttons">
+                    <a href="index.html" class="btn btn-outline">
+                        <i class="fas fa-home" style="margin-right: 10px;"></i>
+                        Back to Home
+                    </a>
+                    <a href="index.html#contact" class="btn">
+                        <i class="fas fa-phone-alt" style="margin-right: 10px;"></i>
+                        Contact Us Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--primary); color: white; padding: 40px 0; text-align: center;">
+        <div class="container">
+            <p>© 2024 Atarifix Consulting. All rights reserved.</p>
+            <p style="margin-top: 10px; opacity: 0.8;">Bringing ideas to life with design and technology.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/services-data.js"></script>
+</body>
+</html>
