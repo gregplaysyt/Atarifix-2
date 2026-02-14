@@ -2783,95 +2783,108 @@ header#header {
     border: 1px solid rgba(255,255,255,0.1);
 }
 
-/* ========== 1. PROCESS SECTION - PREMIUM ========== */
+/* ========== PROCESS SECTION - SIDE-BY-SIDE (SIMPLIFIED) ========== */
+
 .process-showcase {
     display: flex;
     flex-direction: column;
-    gap: 120px;
-    margin-top: 80px;
+    gap: 80px;
 }
 
 .process-visual {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 70px;
+    gap: 50px;
     align-items: center;
-    position: relative;
 }
 
-.process-visual.reverse {
-    direction: rtl;
+/* Hide the empty overlay div */
+.process-overlay {
+    display: none !important;
 }
 
-.process-visual.reverse .process-content {
-    direction: ltr;
-}
-
+/* Image styling */
 .process-image {
     width: 100%;
-    height: 450px;
+    height: 400px;
     object-fit: cover;
-    border-radius: 30px;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.3);
-    transition: transform 0.6s ease;
+    border-radius: 20px;
 }
 
-.process-visual:hover .process-image {
-    transform: scale(1.02);
-}
-
+/* Content styling */
 .process-content {
-    padding: 40px;
-    position: relative;
+    padding: 0;
 }
 
 .step-badge {
-    font-size: 5rem;
-    font-weight: 800;
-    color: rgb(136, 134, 177);
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgb(125, 113, 113);
     line-height: 1;
     margin-bottom: 15px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .process-content h3 {
     font-size: 2.2rem;
     margin-bottom: 20px;
-    color: var(--grey);
-    font-weight: 700;
-    letter-spacing: -0.5px;
-}
-
-.process-visual.reverse .process-content h3 {
-    color: var(--grey);
+    color: white;
 }
 
 .process-content p {
     font-size: 1.1rem;
     line-height: 1.7;
-    color: var(--white);
+    color: rgba(255,255,255,0.9);
     margin-bottom: 25px;
 }
 
 .process-highlights {
     list-style: none;
     padding: 0;
-    margin-top: 25px;
 }
 
 .process-highlights li {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
     gap: 12px;
-    color: var(--gray);
-    font-size: 1rem;
+    color: rgba(255,255,255,0.9);
 }
 
 .process-highlights i {
     color: var(--secondary);
-    width: 20px;
-    font-size: 1rem;
+}
+
+/* Reverse layout */
+.process-visual.reverse {
+    direction: ltr;
+}
+
+.process-visual.reverse .process-image {
+    order: 2;
+}
+
+.process-visual.reverse .process-content {
+    order: 1;
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+    .process-visual {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .process-visual.reverse .process-image {
+        order: 1;
+    }
+    
+    .process-visual.reverse .process-content {
+        order: 2;
+    }
+    
+    .process-image {
+        height: 300px;
+    }
 }
 
 /* ========== 4. INDUSTRIES SECTION - PREMIUM ========== */
