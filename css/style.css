@@ -156,7 +156,7 @@ header .btn-small,
 .btn-free-consultation,
 a[href*="Free Consultation"] {
     color: #ffffff !important;
-    background: var(--gradient) !important; /* Keeps your gradient background */
+    background: var(--primary) !important; /* Keeps your gradient background */
 }
 
 .nav-links a {
@@ -176,7 +176,7 @@ a[href*="Free Consultation"] {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--gradient);
+    background: var(--primary);
     transition: width 0.3s;
 }
 
@@ -194,7 +194,7 @@ a[href*="Free Consultation"] {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: var(--gradient);
+    background: var(--primary);
     color: white;
     padding: 14px 32px;
     border-radius: 50px;
@@ -244,7 +244,7 @@ a[href*="Free Consultation"] {
 }
 
 .btn-outline:hover {
-    background: var(--gradient);
+    background: var(--primary);
     color: rgb(87, 124, 243);
     border-color: transparent;
 }
@@ -252,7 +252,7 @@ a[href*="Free Consultation"] {
 /* ========== MOBILE MENU BUTTON ========== */
 .mobile-menu-btn {
     display: none;
-    background: var(--gradient);
+    background: var(--primary);
     border: none;
     width: 40px;
     height: 40px;
@@ -644,7 +644,7 @@ a[href*="Free Consultation"] {
 .expertise-icon {
     width: 80px;
     height: 80px;
-    background: var(--gradient);
+    background: var(--primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -717,7 +717,7 @@ a[href*="Free Consultation"] {
 .value-icon {
     width: 80px;
     height: 80px;
-    background: var(--gradient);
+    background: var(--primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -827,7 +827,7 @@ a[href*="Free Consultation"] {
     width: 60px;
     height: 60px;
     flex-shrink: 0;
-    background: var(--gradient);
+    background: var(--primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -903,7 +903,7 @@ a[href*="Free Consultation"] {
     padding: 180px 0 100px;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+    background: var(--primary);
 }
 
 .page-hero:before {
@@ -913,7 +913,7 @@ a[href*="Free Consultation"] {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(38, 34, 98, 0.9), rgba(157, 155, 244, 0.8));
+    background: var(--primary);
     z-index: 1;
 }
 
@@ -982,7 +982,7 @@ a[href*="Free Consultation"] {
 }
 
 .category-btn.active {
-    background: var(--gradient);
+    background: var(--primary);
     color: white;
     border-color: transparent;
     box-shadow: 0 5px 15px rgba(45, 91, 227, 0.2);
@@ -1069,7 +1069,7 @@ a[href*="Free Consultation"] {
 
 /* Services CTA */
 .services-cta {
-    background: var(--gradient);
+    background: var(--primary);
     padding: 60px;
     border-radius: 20px;
     text-align: center;
@@ -1511,7 +1511,7 @@ a[href*="Free Consultation"] {
 /* Read More/Less button styling */
 .btn-read-more,
 .btn-read-less {
-    background: var(--gradient);
+    background: var(--primary);
     border: none;
     color: white;
 }
@@ -1597,7 +1597,7 @@ a[href*="Free Consultation"] {
 }
 
 .service-card:hover .service-icon {
-    background: var(--gradient);
+    background: var(--primary);
     transform: scale(1.05);
 }
 
@@ -1713,7 +1713,7 @@ a[href*="Free Consultation"] {
 
 .btn-read-more:hover,
 .btn-read-less:hover {
-    background: var(--gradient);
+    background: var(--primary);
     color: white;
     border-color: transparent;
     transform: translateY(-2px);
@@ -2061,7 +2061,7 @@ a[href*="Free Consultation"] {
     position: absolute;
     top: 20px;
     right: 20px;
-    background: var(--gradient);
+    background: var(--primary);
     color: white;
     padding: 5px 15px;
     border-radius: 50px;
@@ -2126,7 +2126,7 @@ a[href*="Free Consultation"] {
 
 /* ---------- 10. SERVICES CTA VISUAL (ALTERNATIVE CTA STYLE) ---------- */
 .services-cta-visual {
-    background: var(--gradient);
+    background: var(--primary);
     border-radius: 20px;
     padding: 50px 60px;
     margin-top: 80px;
@@ -2273,7 +2273,7 @@ a[href*="Free Consultation"] {
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--gradient);
+    background: var(--primary);
     padding: 35px 25px;
     border-radius: 15px;
     display: flex;
@@ -2361,7 +2361,7 @@ a[href*="Free Consultation"] {
 .stat-icon {
     width: 50px;
     height: 50px;
-    background: var(--gradient);
+    background: var(--primary);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -3005,7 +3005,7 @@ header#header {
     left: 0;
     width: 100%;
     height: 4px;
-    background: var(--gradient);
+    background: var(--primary);
     transform: scaleX(0);
     transition: transform 0.4s ease;
 }
@@ -3034,7 +3034,7 @@ header#header {
 }
 
 .award-card:hover .award-icon {
-    background: var(--gradient);
+    background: var(--primary);
     color: white;
     transform: rotateY(180deg);
 }
@@ -3245,7 +3245,7 @@ header#header {
 .industry-overlay {
     opacity: 1 !important;
     transform: translateY(0) !important;
-    background: linear-gradient(145deg, rgba(38,34,98,0.85), rgba(108,99,255,0.8)) !important;
+    background: var(--primary) !important;
     backdrop-filter: blur(2px);
 }
 
@@ -3269,5 +3269,438 @@ header#header {
 
 /* Optional: Keep the hover effect but ensure text stays visible */
 .industry-card:hover .industry-overlay {
-    background: linear-gradient(145deg, rgba(28,24,78,0.95), rgba(88,79,235,0.9)) !important;
+    background: var(--primary) !important;
+}/* ========== MAKE MISSION & VISION CARDS SMALLER ========== */
+
+/* Reduce card size */
+.mv-card {
+    padding: 30px 25px !important;  /* Was 50px 40px */
+}
+
+/* Make header more compact */
+.mv-header {
+    margin-bottom: 15px !important;  /* Was 25px */
+}
+
+.mv-header .mv-icon {
+    width: 45px !important;          /* Was 60px */
+    height: 45px !important;         /* Was 60px */
+}
+
+.mv-header .mv-icon i {
+    font-size: 1.3rem !important;    /* Was 1.8rem */
+}
+
+.mv-header h2 {
+    font-size: 1.3rem !important;    /* Was 1.6rem */
+}
+
+/* Reduce content spacing */
+.mv-content {
+    padding-left: 60px !important;   /* Was 80px */
+}
+
+.mission-statement,
+.vision-statement {
+    font-size: 0.95rem !important;   /* Was 1.1rem */
+    margin-bottom: 15px !important;  /* Was 25px */
+    padding-bottom: 15px !important; /* Was 20px */
+}
+
+/* Make list items smaller */
+.mv-highlights h4 {
+    font-size: 0.95rem !important;   /* Was 1.1rem */
+    margin-bottom: 10px !important;  /* Was 15px */
+}
+
+.mv-points li {
+    font-size: 0.85rem !important;   /* Was 0.95rem */
+    margin-bottom: 8px !important;   /* Was 12px */
+}
+
+.mv-points i {
+    font-size: 0.85rem !important;   /* Was 1rem */
+    margin-right: 8px !important;    /* Was 12px */
+}
+
+/* Make grid gap smaller */
+.mv-grid {
+    gap: 25px !important;            /* Was 40px */
+}
+/* ========== MISSION & VISION - ADD SIDE PADDING ========== */
+#mission-vision .container {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+}
+
+/* For tablets */
+@media (max-width: 992px) {
+    #mission-vision .container {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+}
+
+/* For mobile */
+@media (max-width: 768px) {
+    #mission-vision .container {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+}
+/* ========== MAKE MISSION & VISION CARDS SQUARE ========== */
+.mv-card {
+    aspect-ratio: 4 / 3 !important;  /* Makes them perfect squares */
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 15px 30px !important;
+    border-radius: 16px !important;  /* Slight rounding, or use 0 for perfect square */
+}
+
+.mv-header {
+    flex-shrink: 0;
+}
+
+.mv-content {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding-left: 0 !important;  /* Remove the left padding */
+    margin-top: 15px !important;
+}
+
+.mission-statement,
+.vision-statement {
+    flex-shrink: 0;
+    margin-bottom: 15px !important;
+}
+
+.mv-highlights {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.mv-points {
+    margin-top: 10px !important;
+}
+
+/* For the grid layout */
+.mv-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 30px !important;
+}
+
+/* For mobile */
+@media (max-width: 768px) {
+    .mv-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .mv-card {
+        aspect-ratio: auto !important;  /* Let height adjust naturally on mobile */
+        min-height: 400px !important;
+    }
+}
+/* ========== MAKE MISSION & VISION CARDS NARROWER SQUARES ========== */
+.mv-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(300px, 400px)) !important;  /* Limits max width */
+    gap: 30px !important;
+    justify-content: center !important;  /* Centers them */
+    max-width: 900px !important;  /* Prevents grid from getting too wide */
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.mv-card {
+    aspect-ratio: 1 / 1 !important;
+    width: 100% !important;
+    max-width: 400px !important;  /* Cards won't exceed this width */
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 30px 25px !important;
+    border-radius: 16px !important;
+    margin: 0 auto !important;  /* Centers each card */
+}
+
+.mv-header {
+    flex-shrink: 0;
+}
+
+.mv-header .mv-icon {
+    width: 45px !important;
+    height: 45px !important;
+}
+
+.mv-header .mv-icon i {
+    font-size: 1.3rem !important;
+}
+
+.mv-header h2 {
+    font-size: 1.3rem !important;
+    margin-bottom: 5px !important;
+}
+
+.mv-content {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding-left: 0 !important;
+    margin-top: 10px !important;
+}
+
+.mission-statement,
+.vision-statement {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 15px !important;
+}
+
+.mv-highlights h4 {
+    font-size: 0.9rem !important;
+    margin-bottom: 8px !important;
+}
+
+.mv-points li {
+    font-size: 0.8rem !important;
+    margin-bottom: 6px !important;
+}
+
+/* For mobile */
+@media (max-width: 900px) {
+    .mv-grid {
+        grid-template-columns: 1fr !important;
+        justify-items: center !important;
+    }
+    
+    .mv-card {
+        aspect-ratio: auto !important;
+        min-height: 350px !important;
+        max-width: 450px !important;
+    }
+}
+/* ========== BIG MARGINS FOR ENTIRE PAGE ========== */
+
+/* Add padding to the body */
+body {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+}
+
+/* Or add to main container that wraps all content */
+.container {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+    max-width: 1600px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* For all sections to have consistent spacing */
+.section-padding {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+}
+
+/* Individual sections if needed */
+#who-we-are,
+#what-we-do,
+#core-values,
+#mission-vision,
+#process,
+#industries,
+#contact {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+}
+
+/* Make header content also have padding */
+header#header .container {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+}
+
+/* For very large screens - even more margin */
+@media (min-width: 1800px) {
+    body, .container, .section-padding {
+        padding-left: 120px !important;
+        padding-right: 120px !important;
+    }
+}
+
+/* For tablets - medium margins */
+@media (max-width: 992px) {
+    body, .container, .section-padding {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+}
+
+/* For mobile - smaller margins */
+@media (max-width: 768px) {
+    body, .container, .section-padding {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+}
+/* ========== FIX WHITE SPACE ON SIDES ========== */
+
+/* Make body background match your page background */
+body {
+    background-color: #f8f9ff !important;  /* Match your light background */
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+    margin: 0 !important;
+}
+
+/* Or if the white space is from html element */
+html {
+    background-color: #f8f9ff !important;  /* Match your page background */
+}
+
+/* Alternative: Remove body padding and use container only */
+body {
+    background-color: #f8f9ff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.container {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+    max-width: 1600px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Make header stretch full width but content stays padded */
+header#header {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+header#header .container {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+}
+/* ========== PROCESS SECTION - SIDE-BY-SIDE LAYOUT (FIXED) ========== */
+
+/* Fix the process showcase container */
+.process-showcase {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 80px !important;
+}
+
+/* Make each process item side-by-side */
+.process-visual {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 60px !important;
+    align-items: center !important;
+    width: 100% !important;
+}
+
+/* Remove any conflicting direction styles */
+.process-visual.reverse {
+    direction: ltr !important;
+}
+
+/* Keep image styling */
+.process-image {
+    width: 100% !important;
+    height: 400px !important;
+    object-fit: cover !important;
+    border-radius: 20px !important;
+    display: block !important;
+}
+
+/* Keep content styling */
+.process-content {
+    padding: 20px !important;
+}
+
+.step-badge {
+    font-size: 4rem !important;
+    font-weight: 700 !important;
+    color: rgba(108, 99, 255, 0.15) !important;
+    margin-bottom: 10px !important;
+    line-height: 1 !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.process-content h3 {
+    font-size: 2rem !important;
+    margin-bottom: 20px !important;
+    color: var(--primary) !important;
+    font-weight: 700 !important;
+}
+
+.process-content p {
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+    color: var(--gray) !important;
+    margin-bottom: 25px !important;
+}
+
+.process-highlights {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.process-highlights li {
+    margin-bottom: 12px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    color: var(--gray) !important;
+    font-size: 0.95rem !important;
+}
+
+.process-highlights i {
+    color: var(--secondary) !important;
+    width: 20px !important;
+    font-size: 1rem !important;
+}
+
+/* For reverse layout (image on right) */
+.process-visual.reverse {
+    direction: ltr !important;
+}
+
+.process-visual.reverse .process-image {
+    order: 2 !important;
+}
+
+.process-visual.reverse .process-content {
+    order: 1 !important;
+}
+
+/* Mobile: stack on small screens */
+@media (max-width: 992px) {
+    .process-visual {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+    
+    .process-visual.reverse .process-image {
+        order: 1 !important;
+    }
+    
+    .process-visual.reverse .process-content {
+        order: 2 !important;
+    }
+    
+    .process-image {
+        height: 300px !important;
+    }
 }
