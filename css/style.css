@@ -13,7 +13,7 @@
     --dark: #1a1a40;          /* Darker version for text */
     --gray: #6b7280;          /* Adjusted gray */
     --success: #10b981;       /* Keep green for success */
-    --gradient: linear-gradient(135deg, var(--primary), var(--accent));
+    --gradient: #262262;
 }
 
 body {
