@@ -3639,7 +3639,7 @@ header#header .container {
 .info-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+    background: var(--primary);
     border-radius: 15px;
     display: flex;
     align-items: center;
