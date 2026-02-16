@@ -4622,3 +4622,60 @@ header#header .container {
         font-size: 1.5rem !important;
     }
 }
+/* ========== MAKE CARDS FULL WIDTH ON MOBILE ========== */
+@media only screen and (max-width: 600px) {
+    /* Override container padding for these sections */
+    #what-we-do .container,
+    #mission-vision .container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    /* Make cards full width */
+    .expertise-grid,
+    .mv-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    /* Remove card margins and make them stretch */
+    .expertise-card,
+    .mv-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        border-radius: 0 !important; /* Optional: removes rounding for edge-to-edge look */
+        padding: 35px 25px !important;
+        box-shadow: none !important; /* Optional: removes shadow for cleaner look */
+        border-bottom: 1px solid rgba(0,0,0,0.05); /* Optional: adds separation between cards */
+    }
+    
+    /* Remove aspect ratio from mission cards */
+    .mv-card {
+        aspect-ratio: auto !important;
+        min-height: auto !important;
+        height: auto !important;
+    }
+    
+    /* Add back some padding for the content */
+    .expertise-card h3,
+    .expertise-card p,
+    .mv-header,
+    .mv-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* For tablets */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    #what-we-do .container,
+    #mission-vision .container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
