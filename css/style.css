@@ -4743,8 +4743,8 @@ a[href*="Free Consultation"],
 /* Read more/less buttons */
 .btn-read-more,
 .btn-read-less {
-    border-color: #c49a6c !important;
-    color: #c49a6c !important;
+    border-color: var(--light) !important;
+    color: var(--primary) !important;
 }
 
 .btn-read-more:hover,
