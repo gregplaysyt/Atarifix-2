@@ -4679,3 +4679,181 @@ header#header .container {
         padding-right: 20px !important;
     }
 }
+/* ========== CHANGE ALL BUTTONS TO #c49a6c ========== */
+
+/* Primary buttons */
+.btn,
+.btn-primary,
+.btn-submit,
+.btn-hero,
+.btn-large,
+.btn-small,
+.nav-links .btn-small,
+.nav-links a.btn,
+header .btn-small,
+.btn-free-consultation,
+a[href*="Free Consultation"],
+.services-cta .btn,
+.btn-hero,
+.section-cta .btn,
+.why-cta .btn {
+    background: #c49a6c !important;
+    color: white !important;
+    border-color: #c49a6c !important;
+}
+
+/* Hover state - slightly darker */
+.btn:hover,
+.btn-primary:hover,
+.btn-submit:hover,
+.btn-hero:hover,
+.btn-large:hover,
+.btn-small:hover,
+.nav-links .btn-small:hover,
+.nav-links a.btn:hover,
+.services-cta .btn:hover,
+.btn-hero:hover,
+.why-cta .btn:hover {
+    background: #b38650 !important; /* Slightly darker shade */
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(196, 154, 108, 0.3) !important;
+}
+
+/* Outline buttons */
+.btn-outline {
+    background: transparent !important;
+    border: 2px solid #c49a6c !important;
+    color: #c49a6c !important;
+}
+
+.btn-outline:hover {
+    background: #c49a6c !important;
+    color: white !important;
+}
+
+/* Card links */
+.card-link {
+    color: #c49a6c !important;
+}
+
+.card-link:hover {
+    color: #b38650 !important;
+}
+
+/* Read more/less buttons */
+.btn-read-more,
+.btn-read-less {
+    border-color: #c49a6c !important;
+    color: #c49a6c !important;
+}
+
+.btn-read-more:hover,
+.btn-read-less:hover {
+    background: #c49a6c !important;
+    color: white !important;
+}
+
+/* Category buttons active state */
+.category-btn.active {
+    background: #c49a6c !important;
+    border-color: #c49a6c !important;
+}
+/* ========== METHODOLOGY SECTION - LIGHT BACKGROUND ========== */
+
+/* Remove dark background */
+#process.bg-dark,
+section#process.bg-dark {
+    background: #f8f9ff !important; /* Match your light background */
+    color: #333 !important;
+}
+
+/* Remove the dark overlay */
+#process.bg-dark::before,
+section#process.bg-dark::before {
+    display: none !important;
+}
+
+/* Make text dark for readability */
+#process .process-content h3,
+section#process .process-content h3 {
+    color: var(--primary) !important; /* Your primary color #262262 */
+}
+
+#process .process-content p,
+section#process .process-content p {
+    color: var(--gray) !important; /* #6b7280 */
+}
+
+#process .process-highlights li,
+section#process .process-highlights li {
+    color: #4a4a4a !important; /* Dark gray */
+}
+
+#process .step-badge,
+section#process .step-badge {
+    color: rgba(38, 34, 98, 0.2) !important; /* Light version of your primary */
+}
+
+#process .process-highlights i,
+section#process .process-highlights i {
+    color: var(--primary) !important; /* Keep icons in your brand color */
+}
+
+/* Add a subtle border or shadow to define the section */
+#process,
+section#process {
+    border-top: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+/* ========== FIX METHODOLOGY SECTION HEADINGS - DARK TEXT ========== */
+
+/* Section title */
+#process .section-title h2 {
+    color: var(--primary) !important;
+}
+
+#process .section-title p {
+    color: var(--gray) !important;
+}
+
+#process .section-tag.tag-light {
+    background: rgba(38, 34, 98, 0.1) !important;
+    color: var(--primary) !important;
+}
+
+/* Step badge */
+#process .step-badge {
+    color: var(--primary) !important;
+    opacity: 0.3;
+}
+
+/* Discovery heading */
+#process .process-content h3 {
+    color: var(--primary) !important;
+    font-weight: 700;
+}
+/* ========== REMOVE TEXT SHADOW FROM METHODOLOGY SECTION ========== */
+
+/* Remove text shadow from all text in the section */
+#process .section-title h2,
+#process .section-title p,
+#process .section-title .text-white h2,
+#process .section-title .text-white p,
+#process .section-tag.tag-light,
+#process .step-badge,
+#process .process-content h3,
+#process .process-content p,
+#process .process-highlights li {
+    text-shadow: none !important;
+}
+
+/* Specifically target any white text shadows */
+.text-white h2,
+.text-white p {
+    text-shadow: none !important;
+}
+
+/* Remove the shadow from the dark background utility */
+.bg-dark .text-white h2 {
+    text-shadow: none !important;
+}
