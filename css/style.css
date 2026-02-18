@@ -4791,7 +4791,7 @@ section#process .process-highlights li {
 
 #process .step-badge,
 section#process .step-badge {
-    color: rgba(38, 34, 98, 0.2) !important; /* Light version of your primary */
+    color: rgb(2, 2, 2) !important; /* Light version of your primary */
 }
 
 #process .process-highlights i,
