@@ -4857,3 +4857,42 @@ section#process {
 .bg-dark .text-white h2 {
     text-shadow: none !important;
 }
+.hero-image img {
+    opacity: 1 !important;  /* Increase from 0.7 to 0.9 */
+}
+/* ========== SHOW HERO IMAGE ON MOBILE ========== */
+@media (max-width: 992px) {
+    .hero-image {
+        width: 100% !important;
+        opacity: 0.3 !important;  /* Adjust this value as needed */
+        display: block !important; /* Ensure it's displayed */
+    }
+    
+    .hero-image img {
+        opacity: 1 !important;
+    }
+    
+    .hero-image .image-overlay {
+        background: linear-gradient(90deg, rgba(248, 249, 255, 0.9) 0%, rgba(248, 249, 255, 0.7) 100%) !important;
+    }
+    
+    /* Make text readable over the image */
+    .hero-content {
+        background: rgba(255, 255, 255, 0.85);
+        padding: 30px;
+        border-radius: 20px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* For smaller phones */
+@media (max-width: 768px) {
+    .hero-image {
+        opacity: 0.25 !important;
+    }
+    
+    .hero-content {
+        padding: 20px;
+    }
+}
