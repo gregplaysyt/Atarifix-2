@@ -5115,3 +5115,227 @@ section#process {
         font-size: 1rem !important;
     }
 }
+/* ========== ABOUT US CARDS - COMPLETE FIX ========== */
+
+/* Values Cards */
+@media (max-width: 768px) {
+    .values-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 0 15px !important;
+    }
+    
+    .value-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 35px 25px !important;
+        height: auto !important;
+    }
+    
+    .value-card h3 {
+        font-size: 1.4rem !important;
+        margin-bottom: 12px !important;
+    }
+    
+    .value-card p {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+    }
+    
+    .value-number {
+        width: 45px !important;
+        height: 45px !important;
+        font-size: 1.2rem !important;
+        top: 10px !important;
+        left: 15px !important;
+    }
+    
+    .value-icon {
+        width: 70px !important;
+        height: 70px !important;
+        margin-top: 20px !important;
+    }
+    
+    .value-icon i {
+        font-size: 1.8rem !important;
+    }
+}
+
+/* Industries Cards */
+@media (max-width: 768px) {
+    .industries-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 0 15px !important;
+    }
+    
+    .industry-card {
+        width: 100% !important;
+        height: 280px !important;
+        margin: 0 !important;
+    }
+    
+    .industry-overlay {
+        padding: 25px 20px !important;
+    }
+    
+    .industry-overlay h3 {
+        font-size: 1.4rem !important;
+        margin-bottom: 8px !important;
+    }
+    
+    .industry-overlay p {
+        font-size: 0.95rem !important;
+    }
+    
+    .industry-icon {
+        width: 60px !important;
+        height: 60px !important;
+        font-size: 1.6rem !important;
+        margin-bottom: 15px !important;
+    }
+}
+
+/* What We Do Cards */
+@media (max-width: 768px) {
+    .expertise-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 0 15px !important;
+    }
+    
+    .expertise-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 30px 25px !important;
+    }
+    
+    .expertise-card h3 {
+        font-size: 1.4rem !important;
+        margin-bottom: 12px !important;
+    }
+    
+    .expertise-card p {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+    }
+    
+    .expertise-icon {
+        width: 70px !important;
+        height: 70px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .expertise-icon i {
+        font-size: 1.8rem !important;
+    }
+    
+    .card-features li {
+        font-size: 0.9rem !important;
+        margin-bottom: 8px !important;
+    }
+}
+
+/* Mission & Vision Cards */
+@media (max-width: 768px) {
+    .mv-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 0 15px !important;
+    }
+    
+    .mv-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 30px 25px !important;
+        aspect-ratio: auto !important;
+        height: auto !important;
+    }
+    
+    .mv-header {
+        flex-direction: row !important;
+        align-items: center !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .mv-header .mv-icon {
+        width: 50px !important;
+        height: 50px !important;
+        margin-right: 15px !important;
+    }
+    
+    .mv-header .mv-icon i {
+        font-size: 1.3rem !important;
+    }
+    
+    .mv-header h2 {
+        font-size: 1.3rem !important;
+        text-align: left !important;
+        margin: 0 !important;
+    }
+    
+    .mv-content {
+        padding-left: 0 !important;
+    }
+    
+    .mission-statement,
+    .vision-statement {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .mv-highlights h4 {
+        font-size: 1rem !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .mv-points li {
+        font-size: 0.9rem !important;
+        margin-bottom: 8px !important;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+    .value-card,
+    .expertise-card,
+    .mv-card {
+        padding: 25px 20px !important;
+    }
+    
+    .value-card h3,
+    .expertise-card h3,
+    .mv-card h3,
+    .industry-overlay h3 {
+        font-size: 1.3rem !important;
+    }
+    
+    .value-card p,
+    .expertise-card p,
+    .mv-card p,
+    .industry-overlay p {
+        font-size: 0.9rem !important;
+    }
+    
+    .industry-card {
+        height: 250px !important;
+    }
+    
+    .mv-header {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+    
+    .mv-header .mv-icon {
+        margin-right: 0 !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .mv-header h2 {
+        text-align: center !important;
+    }
+}
