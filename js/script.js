@@ -432,3 +432,60 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(statsSection);
     }
 });
+// ========== READ MORE BUTTON WITH AUTO-SCROLL ==========
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all service cards
+    const serviceCards = document.querySelectorAll('.service-card');
+    
+    serviceCards.forEach(card => {
+        const readMoreBtn = card.querySelector('.btn-read-more');
+        const readLessBtn = card.querySelector('.btn-read-less');
+        const shortDesc = card.querySelector('.service-short-desc');
+        const fullDesc = card.querySelector('.service-full-desc');
+        
+        if (readMoreBtn && readLessBtn && shortDesc && fullDesc) {
+            
+            // Read More button click
+            readMoreBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Hide short description, show full description
+                shortDesc.style.display = 'none';
+                fullDesc.style.display = 'block';
+                readMoreBtn.style.display = 'none';
+                readLessBtn.style.display = 'flex';
+                card.classList.add('expanded');
+                
+                // Smooth scroll to the top of this card
+                setTimeout(() => {
+                    card.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'start',
+                        inline: 'nearest'
+                    });
+                }, 100); // Small delay to ensure DOM updates
+            });
+            
+            // Read Less button click
+            readLessBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Show short description, hide full description
+                shortDesc.style.display = 'block';
+                fullDesc.style.display = 'none';
+                readMoreBtn.style.display = 'flex';
+                readLessBtn.style.display = 'none';
+                card.classList.remove('expanded');
+                
+                // Smooth scroll back up to the top of this card
+                setTimeout(() => {
+                    card.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'start',
+                        inline: 'nearest'
+                    });
+                }, 100);
+            });
+        }
+    });
+});
