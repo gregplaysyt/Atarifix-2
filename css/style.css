@@ -4864,7 +4864,7 @@ section#process {
 @media (max-width: 992px) {
     .hero-image {
         width: 100% !important;
-        opacity: 0.3 !important;  /* Adjust this value as needed */
+        opacity: 0.9 !important;  /* Adjust this value as needed */
         display: block !important; /* Ensure it's displayed */
     }
     
@@ -4889,7 +4889,7 @@ section#process {
 /* For smaller phones */
 @media (max-width: 768px) {
     .hero-image {
-        opacity: 0.25 !important;
+        opacity: 0.9 !important;
     }
     
     .hero-content {
