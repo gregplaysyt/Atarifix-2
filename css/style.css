@@ -5491,3 +5491,56 @@ section#process {
         font-size: 0.9rem !important;
     }
 }
+/* ========== FIX IMAGE BOTTOM PADDING ========== */
+@media (max-width: 768px) {
+    /* Fix gallery images */
+    .image-gallery {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        line-height: 0 !important; /* Removes extra space */
+    }
+    
+    .gallery-main {
+        margin: 0 !important;
+        padding: 0 !important;
+        line-height: 0 !important;
+        border-radius: 15px !important;
+        overflow: hidden !important;
+    }
+    
+    .gallery-main img {
+        display: block !important;
+        width: 100% !important;
+        height: 280px !important;
+        object-fit: cover !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        vertical-align: middle !important; /* Removes bottom space */
+        border-radius: 0 !important;
+    }
+    
+    .gallery-secondary {
+        position: relative !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        line-height: 0 !important;
+        border: none !important;
+    }
+    
+    .gallery-secondary img {
+        display: block !important;
+        width: 100% !important;
+        height: 200px !important;
+        object-fit: cover !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        vertical-align: middle !important;
+        border-radius: 0 !important;
+    }
+}
