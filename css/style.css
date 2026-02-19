@@ -5204,3 +5204,127 @@ section#process {
         font-size: 0.85rem !important;
     }
 }
+/* ========== FIX WHO WE ARE SECTION ON MOBILE ========== */
+@media (max-width: 768px) {
+    /* Make the section full width */
+    #who-we-are {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    /* Remove container padding */
+    #who-we-are .container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        max-width: 100% !important;
+    }
+    
+    /* Stack grid vertically */
+    #who-we-are .content-grid {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+        margin-top: 20px !important;
+    }
+    
+    /* Text content - add padding */
+    #who-we-are .content-text {
+        padding: 0 20px !important;
+    }
+    
+    /* Heading */
+    #who-we-are .content-text h3 {
+        font-size: 1.6rem !important;
+        margin-bottom: 15px !important;
+    }
+    
+    /* Paragraphs */
+    #who-we-are .content-text p {
+        font-size: 0.95rem !important;
+        line-height: 1.7 !important;
+        margin-bottom: 15px !important;
+    }
+    
+    /* Features grid */
+    .features-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+        margin: 25px 0 !important;
+    }
+    
+    .feature-item {
+        padding: 15px !important;
+        background: #f8f9ff;
+        border-radius: 12px;
+    }
+    
+    .feature-icon {
+        width: 40px !important;
+        height: 40px !important;
+        font-size: 1rem !important;
+    }
+    
+    .feature-text h4 {
+        font-size: 1rem !important;
+    }
+    
+    .feature-text p {
+        font-size: 0.85rem !important;
+    }
+    
+    /* Image gallery */
+    #who-we-are .content-image {
+        padding: 0 20px !important;
+        order: -1 !important; /* Images on top */
+    }
+    
+    .gallery-main img {
+        height: 250px !important;
+        border-radius: 15px !important;
+    }
+    
+    .gallery-secondary {
+        position: relative !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        margin-top: 15px !important;
+        border: none !important;
+    }
+    
+    .gallery-secondary img {
+        height: 150px !important;
+        border-radius: 12px !important;
+    }
+    
+    /* Button */
+    #who-we-are .btn {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-top: 10px !important;
+        padding: 14px 20px !important;
+        font-size: 0.95rem !important;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+    #who-we-are .content-text h3 {
+        font-size: 1.4rem !important;
+    }
+    
+    #who-we-are .content-text p {
+        font-size: 0.9rem !important;
+    }
+    
+    .gallery-main img {
+        height: 200px !important;
+    }
+    
+    .gallery-secondary img {
+        height: 120px !important;
+    }
+    
+    .feature-item {
+        padding: 12px !important;
+    }
+}
