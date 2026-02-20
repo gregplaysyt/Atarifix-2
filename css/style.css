@@ -7,8 +7,8 @@
 
 :root {
     --primary: #262262;       /* Your preferred deep navy/purple */
-    --secondary: #6c63ff;     /* Complementary purple */
-    --accent: #9d9bf4;        /* Light purple accent */
+    --secondary: #262262;     /* Complementary purple */
+    --accent: #4034e9;        /* Light purple accent */
     --light: #f8f9ff;         /* Keep light background */
     --dark: #1a1a40;          /* Darker version for text */
     --gray: #6b7280;          /* Adjusted gray */
