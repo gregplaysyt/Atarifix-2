@@ -891,11 +891,11 @@ a[href*="Free Consultation"] {
 }
 
 .mission-card {
-    border-top: 5px solid var(--secondary);
+    border-top: 5px solid var(--primary);
 }
 
 .vision-card {
-    border-top: 5px solid var(--accent);
+    border-top: 5px solid var(--primary);
 }
 
 /* ========== SERVICES PAGE STYLES ========== */
